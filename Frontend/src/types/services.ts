@@ -1,0 +1,95 @@
+
+import { 
+  Droplet, 
+  Zap, 
+  Paintbrush, 
+  Scissors, 
+  Home, 
+  Wrench 
+} from 'lucide-react';
+
+export type ServiceType = 'plumbing' | 'electrical' | 'painting' | 'landscaping' | 'cleaning' | 'repair';
+
+export const serviceIcons = {
+  plumbing: Droplet,
+  electrical: Zap,
+  painting: Paintbrush,
+  landscaping: Scissors,
+  cleaning: Home,
+  repair: Wrench,
+};
+
+export const services = [
+  {
+    id: 1,
+    name: 'Emergency Plumbing Service',
+    provider: 'John Smith Plumbing',
+    type: 'plumbing' as ServiceType,
+    rating: 4.9,
+    reviews: 127,
+    location: 'Downtown, City',
+    price: '$50-100/hr',
+    description: 'Available 24/7 for all your emergency plumbing needs. Specializing in leak repairs, pipe installations, and drain cleaning.',
+    image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 2,
+    name: 'Residential Electrical Services',
+    provider: 'Power Pros',
+    type: 'electrical' as ServiceType,
+    rating: 4.8,
+    reviews: 94,
+    location: 'North Side, City',
+    price: '$60-120/hr',
+    description: 'Licensed electricians for all residential needs. Wiring, outlet installation, lighting, and safety inspections.',
+    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 3,
+    name: 'Deep Cleaning Service',
+    provider: 'Pristine Cleaning Co.',
+    type: 'cleaning' as ServiceType,
+    rating: 4.7,
+    reviews: 112,
+    location: 'West End, City',
+    price: '$25-40/hr',
+    description: 'Comprehensive home cleaning services. Regular maintenance, deep cleaning, and specialized services available.',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 4,
+    name: 'Professional Painting Services',
+    provider: 'ColorMasters Painting',
+    type: 'painting' as ServiceType,
+    rating: 4.9,
+    reviews: 78,
+    location: 'East Side, City',
+    price: '$35-60/hr',
+    description: 'Interior and exterior painting for residential properties. Quality work, clean service, and color consultation.',
+    image: 'https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 5,
+    name: 'Lawn Care & Maintenance',
+    provider: 'Green Thumb Landscaping',
+    type: 'landscaping' as ServiceType,
+    rating: 4.6,
+    reviews: 65,
+    location: 'Suburbs, City',
+    price: '$40-80/hr',
+    description: 'Complete lawn care services including mowing, trimming, fertilization, and seasonal clean-up.',
+    image: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 6,
+    name: 'Handyman Services',
+    provider: 'Fix-It-All Repairs',
+    type: 'repair' as ServiceType,
+    rating: 4.8,
+    reviews: 103,
+    location: 'Central, City',
+    price: '$45-90/hr',
+    description: 'General home repairs and maintenance. Furniture assembly, fixture installation, and minor renovations.',
+    image: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  },
+];
